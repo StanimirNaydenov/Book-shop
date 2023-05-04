@@ -18,7 +18,7 @@ if(!isset($user_id)){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>orders</title>
+   <title>Моите поръчки</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -32,13 +32,13 @@ if(!isset($user_id)){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>your orders</h3>
-   <p> <a href="home.php">home</a> / orders </p>
+   <h3>Моите поръчки</h3>
+   <p> <a href="home.php">Начало</a> / Моите поръчки </p>
 </div>
 
 <section class="placed-orders">
 
-   <h1 class="title">placed orders</h1>
+   <h1 class="title">Направени поръчки</h1>
 
    <div class="box-container">
 
@@ -48,20 +48,20 @@ if(!isset($user_id)){
             while($fetch_orders = mysqli_fetch_assoc($order_query)){
       ?>
       <div class="box">
-         <p> placed on : <span><?php echo $fetch_orders['placed_on']; ?></span> </p>
-         <p> name : <span><?php echo $fetch_orders['name']; ?></span> </p>
-         <p> number : <span><?php echo $fetch_orders['number']; ?></span> </p>
+         <p> Направени на: <span><?php echo $fetch_orders['placed_on']; ?></span> </p>
+         <p> Име : <span><?php echo $fetch_orders['name']; ?></span> </p>
+         <p> Телефонен номер : <span><?php echo $fetch_orders['number']; ?></span> </p>
          <p> email : <span><?php echo $fetch_orders['email']; ?></span> </p>
-         <p> address : <span><?php echo $fetch_orders['address']; ?></span> </p>
-         <p> payment method : <span><?php echo $fetch_orders['method']; ?></span> </p>
-         <p> your orders : <span><?php echo $fetch_orders['total_products']; ?></span> </p>
-         <p> total price : <span>$<?php echo $fetch_orders['total_price']; ?>/-</span> </p>
-         <p> payment status : <span style="color:<?php if($fetch_orders['payment_status'] == 'pending'){ echo 'red'; }else{ echo 'green'; } ?>;"><?php echo $fetch_orders['payment_status']; ?></span> </p>
+         <p> Адрес : <span><?php echo $fetch_orders['address']; ?></span> </p>
+         <p> Метод на плащане : <span><?php echo $fetch_orders['method']; ?></span> </p>
+         <p> Вашата поръчка : <span><?php echo $fetch_orders['total_products']; ?></span> </p>
+         <p> Крайна цена : <span>BGN<?php echo $fetch_orders['total_price']; ?>/-</span> </p>
+         <p> Статус на плащане : <span style="color:<?php if($fetch_orders['payment_status'] == 'pending'){ echo 'red'; }else{ echo 'green'; } ?>;"><?php echo $fetch_orders['payment_status']; ?></span> </p>
          </div>
       <?php
        }
       }else{
-         echo '<p class="empty">no orders placed yet!</p>';
+         echo '<p class="empty">Няма направени поръчки все още!</p>';
       }
       ?>
    </div>

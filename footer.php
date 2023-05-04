@@ -33,6 +33,6 @@
 
    </div>
 
-   <p class="credit"> &copy; copyright  @ <?php echo date('Y'); ?> <span>Издателска къща Хермес ООД</span> </p>
+   <p class="credit"> &copy;  <?php echo date('Y'); ?> <span>Издателска къща Хермес ООД</span> </p>
 
 </section>

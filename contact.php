@@ -20,10 +20,10 @@ if(isset($_POST['send'])){
    $select_message = mysqli_query($conn, "SELECT * FROM `message` WHERE name = '$name' AND email = '$email' AND number = '$number' AND message = '$msg'") or die('query failed');
 
    if(mysqli_num_rows($select_message) > 0){
-      $message[] = 'message sent already!';
+      $message[] = 'Съобщението вече е изпратено!';
    }else{
       mysqli_query($conn, "INSERT INTO `message`(user_id, name, email, number, message) VALUES('$user_id', '$name', '$email', '$number', '$msg')") or die('query failed');
-      $message[] = 'message sent successfully!';
+      $message[] = 'Съобщението е изпратено успешно!';
    }
 
 }
@@ -50,19 +50,19 @@ if(isset($_POST['send'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>contact us</h3>
-   <p> <a href="home.php">home</a> / contact </p>
+   <h3>Връзка с нас</h3>
+   <p> <a href="home.php">Начало</a> / Връзка с нас </p>
 </div>
 
 <section class="contact">
 
    <form action="" method="post">
-      <h3>say something!</h3>
-      <input type="text" name="name" required placeholder="enter your name" class="box">
-      <input type="email" name="email" required placeholder="enter your email" class="box">
-      <input type="number" name="number" required placeholder="enter your number" class="box">
-      <textarea name="message" class="box" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
-      <input type="submit" value="send message" name="send" class="btn">
+      <h3>Съобщете за проблема ви!</h3>
+      <input type="text" name="name" required placeholder="Въведете вашето име" class="box">
+      <input type="email" name="email" required placeholder="Въведете вашия email" class="box">
+      <input type="number" name="number" required placeholder="Въведете вашия телефонен номер" class="box">
+      <textarea name="message" class="box" placeholder="Въведете вашето съобщение" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="Изпратете" name="send" class="btn">
    </form>
 
 </section>
