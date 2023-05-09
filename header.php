@@ -19,7 +19,7 @@ if(isset($message)){
             <a href="https://www.facebook.com/profile.php?id=100063632077219" class="fab fa-facebook-f"></a>
             <a href="https://www.instagram.com/hermes_bookstore/" class="fab fa-instagram"></a>
          </div>
-         <p> <a href="login.php">Вход</a> | <a href="register.php">Регистър</a> </p>
+         <p> <a href="login.php">Вход</a> | <a href="register.php">Регистрация</a> </p>
       </div>
    </div>
 

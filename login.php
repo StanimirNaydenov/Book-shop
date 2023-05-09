@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
       }
 
    }else{
-      $message[] = 'incorrect email or password!';
+      $message[] = 'Неправелен email или парола!';
    }
 
 }
@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>login</title>
+   <title>Вход</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -71,11 +71,11 @@ if(isset($message)){
 <div class="form-container">
 
    <form action="" method="post">
-      <h3>login now</h3>
-      <input type="email" name="email" placeholder="enter your email" required class="box">
-      <input type="password" name="password" placeholder="enter your password" required class="box">
-      <input type="submit" name="submit" value="login now" class="btn">
-      <p>don't have an account? <a href="register.php">register now</a></p>
+      <h3>Влезте сега</h3>
+      <input type="email" name="email" placeholder="Въведете вашия email" required class="box">
+      <input type="password" name="password" placeholder="Въведете вашата парола" required class="box">
+      <input type="submit" name="submit" value="Влезте сега" class="btn">
+      <p>Нямате акунт? <a href="register.php">Регистрирайте се сега</a></p>
    </form>
 
 </div>
