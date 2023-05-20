@@ -150,6 +150,69 @@ if(!isset($user_id)){
    <h1 class="title">Известни автори</h1>
 
    <div class="box-container">
+      <div class="box">
+         <img src="images/Алекс Астър 1.png" alt="">
+         <div class="share">
+         </div>
+         <h3>Алекс Астър</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/Дженифър Л. Арментраут 2.png" alt="">
+         <div class="share">
+         </div>
+         <h3>Дженифър Л. Арментраут</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/Артър Конан Дойл 3.png" alt="">
+         <div class="share">
+         </div>
+         <h3> Артър Конан Дойл</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/Стивън Кинг 4.png" alt="">
+         <div class="share">
+         </div>
+         <h3> Стивън Кинг</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/Даниел Лори 5.png" alt="">
+         <div class="share">
+         </div>
+         <h3> Даниел Лори</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/Сара Адамс 6.png" alt="">
+         <div class="share">
+         </div>
+         <h3>Сара Адамс</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/Джейми Оливър 7.png" alt="">
+         <div class="share">
+         </div>
+         <h3>Джейми Оливър</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/Милена Кирова 81.png" alt="">
+         <div class="share">
+         </div>
+         <h3> Милена Кирова</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/Даниъл Силва 9.png" alt="">
+         <div class="share">
+         </div>
+         <h3>Даниъл Силва</h3>
+      </div>
+
 
       
 
